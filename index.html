@@ -7,23 +7,46 @@
     <title>Countries API</title>
 </head>
 <body>
-    <nav>
-
+    <nav class="px-5 d-flex justify-content-between py-4"> 
+        <h2 class="my-auto">Where in the world?</h2>
+        <div class="my-auto">
+            <button>Dark Mode</button>
+        </div>
     </nav>
 
-    <main class="container">
+    <main class="px-5">
         
-        <section>
-            
+        <section class="d-flex py-4 justify-content-between">
+            <div class="input-group mb-3 w-25 input-group-lg my-auto">
+                <input type="text" class="form-control" placeholder="Search for a country...">
+            </div>
+            <div class="dropdown my-auto">
+                <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
+                  Filter by Region
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Africa</a>
+                  <a class="dropdown-item" href="#">America</a>
+                  <a class="dropdown-item" href="#">Asia</a>
+                  <a class="dropdown-item" href="#">Europe</a>
+                  <a class="dropdown-item" href="#">Oceania</a>
+                </div>
+            </div>
         </section>
         
-        <section>
+        <section class="container-fluid px-sm-0 pt-4">
+
+            <div class="row" id="countries">
+                
+            </div>
 
         </section>
     </main>
+
     
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="scripts/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>    <script type="text/javascript" src="scripts/script.js"></script>
 </body>
 </html>
