@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <title>Countries API</title>
 </head>
-<body>
+<body onload="home()">
     <nav class="px-5 d-flex justify-content-between py-4"> 
-        <h2 class="my-auto">Where in the world?</h2>
+        <h2 class="my-auto" >Where in the world?</h2>
         <div class="my-auto">
             <button>Dark Mode</button>
         </div>
@@ -18,18 +18,18 @@
         
         <section class="d-flex py-4 justify-content-between">
             <div class="input-group mb-3 w-25 input-group-lg my-auto">
-                <input type="text" class="form-control" placeholder="Search for a country...">
+                <input type="text" class="form-control" placeholder="Search for a country..." onchange="search(value)">
             </div>
             <div class="dropdown my-auto">
                 <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
                   Filter by Region
                 </button>
                 <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Africa</a>
-                  <a class="dropdown-item" href="#">America</a>
-                  <a class="dropdown-item" href="#">Asia</a>
-                  <a class="dropdown-item" href="#">Europe</a>
-                  <a class="dropdown-item" href="#">Oceania</a>
+                  <a class="dropdown-item" href="#" onclick="region_select('africa')">Africa</a>
+                  <a class="dropdown-item" href="#" onclick="region_select('americas')">America</a>
+                  <a class="dropdown-item" href="#" onclick="region_select('asia')">Asia</a>
+                  <a class="dropdown-item" href="#" onclick="region_select('europe')">Europe</a>
+                  <a class="dropdown-item" href="#" onclick="region_select('oceania')">Oceania</a>
                 </div>
             </div>
         </section>
