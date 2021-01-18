@@ -10,14 +10,13 @@ $white : hsl(0, 0%, 100%);
 .hidden{
     display: none;
 }
-
 body{
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 300;
 }
-nav{
-    box-shadow: 0 8px 6px -6px black;
-}
+// nav{
+//     box-shadow: 0 8px 6px -6px black;
+// }
 
 h1,h2,h3,h4,h5{
     font-weight: 800;
@@ -29,10 +28,13 @@ main{
     background-color: $lightgray;
 }
 .country-card-content, .country-info{
-        background-color: $white;
-    }
-.country-card-content img{
+    background-color: $white;
+}
+.country-image{
     height: 10rem;
+    img{
+        object-fit: cover;
+    }
 }
 .dropdown{
     button{
@@ -53,11 +55,19 @@ main{
         border: none;
         font-weight: 600;
     }
-    button:focus{
-        outline: 0;
-    }
+}
+button:focus, input:focus{
+    outline: 0;
 }
 
-@media screen and (min-width: 500px){
-
+.darkmode{
+    *, input::placeholder, .dropdown-item:hover{
+        color: $white;
+    }
+    .country-card-content, .country-info, nav, .dropdown>*, input, input:focus, .dropdown-item:hover{
+        background-color: $blue;
+    }
+    body, main{
+        background-color: $darkblue-1;
+    }
 }

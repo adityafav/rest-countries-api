@@ -8,10 +8,6 @@ body {
   font-weight: 300;
 }
 
-nav {
-  box-shadow: 0 8px 6px -6px black;
-}
-
 h1, h2, h3, h4, h5 {
   font-weight: 800;
 }
@@ -28,8 +24,11 @@ main {
   background-color: white;
 }
 
-.country-card-content img {
+.country-image {
   height: 10rem;
+}
+.country-image img {
+  object-fit: cover;
 }
 
 .dropdown button {
@@ -51,8 +50,19 @@ main {
   border: none;
   font-weight: 600;
 }
-#toggle_mode button:focus {
+
+button:focus, input:focus {
   outline: 0;
+}
+
+.darkmode *, .darkmode input::placeholder, .darkmode .dropdown-item:hover {
+  color: white;
+}
+.darkmode .country-card-content, .darkmode .country-info, .darkmode nav, .darkmode .dropdown > *, .darkmode input, .darkmode input:focus, .darkmode .dropdown-item:hover {
+  background-color: #2b3945;
+}
+.darkmode body, .darkmode main {
+  background-color: #202c37;
 }
 
 /*# sourceMappingURL=style.css.map */
