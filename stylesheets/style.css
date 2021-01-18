@@ -1,3 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+.hidden {
+  display: none;
+}
 
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+}
+
+nav {
+  box-shadow: 0 8px 6px -6px black;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 800;
+}
+
+strong {
+  font-weight: bold;
+}
+
+main {
+  background-color: #fafafa;
+}
+
+.country-card-content, .country-info {
+  background-color: white;
+}
+
+.country-card-content img {
+  height: 10rem;
+}
+
+.dropdown button {
+  background-color: white;
+}
+.dropdown button:focus {
+  outline: 0;
+}
+
+#toggle_mode {
+  cursor: pointer;
+}
+#toggle_mode i {
+  font-weight: 600;
+}
+#toggle_mode button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-weight: 600;
+}
+#toggle_mode button:focus {
+  outline: 0;
+}
 
 /*# sourceMappingURL=style.css.map */

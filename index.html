@@ -2,26 +2,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"  href="stylesheets/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet"  href="stylesheets/style.css">
     <title>Countries API</title>
 </head>
 <body onload="home()">
     <nav class="px-5 d-flex justify-content-between py-4"> 
-        <h2 class="my-auto" >Where in the world?</h2>
-        <div class="my-auto">
+        <h4 class="my-auto">Where in the world?</h4>
+        <div class="my-auto" id="toggle_mode" onclick="toggle_mode()">
+            <i class="far fa-moon"></i>
             <button>Dark Mode</button>
+            <button class="hidden">Light Mode</button>
         </div>
     </nav>
 
     <main class="px-5">
-        
-        <section class="d-flex py-4 justify-content-between">
-            <div class="input-group mb-3 w-25 input-group-lg my-auto">
+    
+        <section class="d-flex py-4 justify-content-between align-content-stretch">
+            <div class="input-group mb-3 w-50 input-group-lg my-auto">
                 <input type="text" class="form-control" placeholder="Search for a country..." onchange="search(value)">
             </div>
-            <div class="dropdown my-auto">
-                <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
+            <div class="dropdown">
+                <button type="button" class="h-100 btn dropdown-toggle" data-toggle="dropdown">
                   Filter by Region
                 </button>
                 <div class="dropdown-menu">
@@ -34,7 +37,7 @@
             </div>
         </section>
         
-        <section class="container-fluid px-sm-0 pt-4">
+        <section class="container-fluid px-0 pt-4">
 
             <div class="row" id="countries">
                 
