@@ -3,9 +3,23 @@
   display: none;
 }
 
+.darkmode *, .darkmode input::placeholder, .darkmode input:focus, .darkmode .dropdown-item:hover {
+  color: white;
+}
+.darkmode .country-card-content, .darkmode .country-info, .darkmode nav, .darkmode .dropdown > *, .darkmode input, .darkmode input:focus, .darkmode .dropdown-item:hover {
+  background-color: #2b3945;
+}
+.darkmode body, .darkmode main {
+  background-color: #202c37;
+}
+
 body {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 300;
+}
+
+button {
+  cursor: pointer;
 }
 
 h1, h2, h3, h4, h5 {
@@ -13,11 +27,17 @@ h1, h2, h3, h4, h5 {
 }
 
 strong {
-  font-weight: bold;
+  font-weight: 600;
+}
+
+nav a, nav a:hover {
+  color: unset;
+  text-decoration: none;
 }
 
 main {
   background-color: #fafafa;
+  min-height: 100vh;
 }
 
 .country-card-content, .country-info {
@@ -45,7 +65,6 @@ main {
   font-weight: 600;
 }
 #toggle_mode button {
-  cursor: pointer;
   background: none;
   border: none;
   font-weight: 600;
@@ -55,14 +74,15 @@ button:focus, input:focus {
   outline: 0;
 }
 
-.darkmode *, .darkmode input::placeholder, .darkmode .dropdown-item:hover {
-  color: white;
-}
-.darkmode .country-card-content, .darkmode .country-info, .darkmode nav, .darkmode .dropdown > *, .darkmode input, .darkmode input:focus, .darkmode .dropdown-item:hover {
-  background-color: #2b3945;
-}
-.darkmode body, .darkmode main {
-  background-color: #202c37;
+#back {
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  width: 120px;
+  height: 35px;
+  color: initial;
+  text-decoration: none;
+  box-shadow: 0 0 5px #858585;
 }
 
 /*# sourceMappingURL=style.css.map */

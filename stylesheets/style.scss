@@ -10,22 +10,42 @@ $white : hsl(0, 0%, 100%);
 .hidden{
     display: none;
 }
+.darkmode{
+    *, input::placeholder, input:focus, .dropdown-item:hover{
+        color: $white;
+    }
+    .country-card-content, .country-info, nav, .dropdown>*, input, input:focus, .dropdown-item:hover{
+        background-color: $blue;
+    }
+    body, main{
+        background-color: $darkblue-1;
+    }
+}
 body{
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 300;
 }
-// nav{
-//     box-shadow: 0 8px 6px -6px black;
-// }
-
+button{
+    cursor: pointer;
+}
 h1,h2,h3,h4,h5{
     font-weight: 800;
 }
 strong{
-    font-weight: bold;
+    font-weight: 600;
+}
+
+
+// index page
+nav {
+    a, a:hover {
+        color: unset;
+        text-decoration: none;
+    }
 }
 main{
     background-color: $lightgray;
+    min-height: 100vh;
 }
 .country-card-content, .country-info{
     background-color: $white;
@@ -50,7 +70,6 @@ main{
         font-weight: 600;
     }
     button{
-        cursor: pointer;
         background: none;
         border: none;
         font-weight: 600;
@@ -60,14 +79,15 @@ button:focus, input:focus{
     outline: 0;
 }
 
-.darkmode{
-    *, input::placeholder, .dropdown-item:hover{
-        color: $white;
-    }
-    .country-card-content, .country-info, nav, .dropdown>*, input, input:focus, .dropdown-item:hover{
-        background-color: $blue;
-    }
-    body, main{
-        background-color: $darkblue-1;
-    }
+
+// details page
+#back{
+    background-color: $white;
+    border: none;
+    border-radius: 5px;
+    width: 120px;
+    height: 35px;
+    color: initial;
+    text-decoration: none;
+    box-shadow: 0 0 5px $gray;
 }
