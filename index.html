@@ -19,20 +19,26 @@
 
     <main class="px-5" ">
     
-        <section class="d-flex py-4 justify-content-between align-content-stretch">
-            <div class="input-group mb-3 w-50 input-group-lg my-auto">
-                <input type="text" class="form-control border-0" placeholder="Search for a country..." onchange="search(value)">
-            </div>
-            <div class="dropdown">
-                <button type="button" class="h-100 btn dropdown-toggle" data-toggle="dropdown">
-                  Filter by Region
-                </button>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#" onclick="region_select('Africa')">Africa</a>
-                  <a class="dropdown-item" href="#" onclick="region_select('Americas')">America</a>
-                  <a class="dropdown-item" href="#" onclick="region_select('Asia')">Asia</a>
-                  <a class="dropdown-item" href="#" onclick="region_select('Europe')">Europe</a>
-                  <a class="dropdown-item" href="#" onclick="region_select('Oceania')">Oceania</a>
+        <section class="container-fluid py-4 px-0">
+            <div class="row">
+                <div class="col-12 col-sm-6">    
+                    <div class="input-group mb-3 input-group-lg my-auto rounded">
+                        <input type="text" class="form-control border-0" placeholder="Search for a country..." onchange="search(value)">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 mt-5 mt-sm-0">
+                    <div class="dropdown rounded float-sm-right">
+                        <button type="button" class="h-100 btn dropdown-toggle" data-toggle="dropdown">
+                        Filter by Region
+                        </button>
+                        <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#" onclick="region_select('Africa')">Africa</a>
+                        <a class="dropdown-item" href="#" onclick="region_select('Americas')">America</a>
+                        <a class="dropdown-item" href="#" onclick="region_select('Asia')">Asia</a>
+                        <a class="dropdown-item" href="#" onclick="region_select('Europe')">Europe</a>
+                        <a class="dropdown-item" href="#" onclick="region_select('Oceania')">Oceania</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

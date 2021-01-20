@@ -3,14 +3,17 @@
   display: none;
 }
 
-.darkmode *, .darkmode input::placeholder, .darkmode input:focus, .darkmode .dropdown-item:hover {
+.darkmode *, .darkmode input::placeholder, .darkmode input:focus, .darkmode .dropdown-item:hover, .darkmode #back, .darkmode .borders {
   color: white;
 }
-.darkmode .country-card-content, .darkmode .country-info, .darkmode nav, .darkmode .dropdown > *, .darkmode input, .darkmode input:focus, .darkmode .dropdown-item:hover {
+.darkmode .country-card-content, .darkmode .country-info, .darkmode nav, .darkmode .dropdown > *, .darkmode input, .darkmode input:focus, .darkmode .dropdown-item:hover, .darkmode #back, .darkmode .borders {
   background-color: #2b3945;
 }
 .darkmode body, .darkmode main {
   background-color: #202c37;
+}
+.darkmode .country-card-content, .darkmode .input-group, .darkmode .dropdown > button, .darkmode #back, .darkmode .borders {
+  box-shadow: 0 0 5px #111517;
 }
 
 body {
@@ -38,6 +41,10 @@ nav a, nav a:hover {
 main {
   background-color: #fafafa;
   min-height: 100vh;
+}
+
+.country-card-content, .input-group, .dropdown > button {
+  box-shadow: 0 0 5px #858585;
 }
 
 .country-card-content, .country-info {
