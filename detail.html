@@ -7,7 +7,7 @@
     <link rel="stylesheet"  href="stylesheets/style.css">
     <title>Country Details</title>
 </head>
-<body>
+<body onload="details_load()">
     <nav class="px-5 d-flex justify-content-between py-4"> 
         <a href="index.html"><h5 class="my-auto">Where in the world?</h5></a>
         <div class="my-auto" id="toggle_mode" onclick="toggle_mode()">
@@ -23,11 +23,11 @@
             <a href="index.html"><button class="" id="back"><i class="fas fa-long-arrow-alt-left mr-2"></i>Back</button></a>
         </section>
         
-        <section class="container-fluid mt-5 pt-5 px-0 px-sm-3">
+        <section class="container-fluid mt-5 py-5 px-0 px-sm-3">
             <div class="row">
                 <div class="col-12 col-sm-6 pl-sm-0 pr-md-5">
-                    <div class="flag">
-                        <img src="https://restcountries.eu/data/umi.svg" alt="" class="w-100">
+                    <div id="flag">
+                        <!-- <img src="https://restcountries.eu/data/umi.svg" alt="" class="w-100"> -->
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 pr-sm-0 pl-lg-5">
@@ -45,14 +45,20 @@
                             <p class="mb-1"><strong>Capital</strong>asdfasdfasdfa</p>
                         </div>
                         <div class="col-12 col-lg-6">
-                            <p class=""><strong>Top Level Domain</strong>: asdadssad</p>
-                            <p class=""><strong>Currencies</strong>: </p>
-                            <p class=""><strong>Languages</strong>: </p>
+                            <p class="mb-1"><strong>Top Level Domain</strong>: asdadssad</p>
+                            <p class="mb-1"><strong>Currencies</strong>: </p>
+                            <p class="mb-1"><strong>Languages</strong>: </p>
                         </div>
                     </div>
                     <div class="row mt-5">
                         <div class="col-12">
                             <p><strong>Border Countries: </strong></p>
+                            <a href="detail.html"><button class="borders mb-3 mr-2" id="" onclick="details(id)">asdhf</button></a>
+                            <a href="detail.html"><button class="borders mb-3 mr-2">asdasdhf</button></a>
+                            <a href="detail.html"><button class="borders mb-3 mr-2">asasdadhf asdasdf asf</button></a>
+                            <a href="detail.html"><button class="borders mb-3 mr-2">asasdadhf asdasdf asf</button></a>
+                            <a href="detail.html"><button class="borders mb-3 mr-2">asasdadhf asdasdf asf</button></a>
+                            <a href="detail.html"><button class="borders mb-3 mr-2">asasdadhf asdasdf asf</button></a>
                         </div>
                     </div>
                 </div>

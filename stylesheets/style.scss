@@ -25,7 +25,7 @@ body{
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 300;
 }
-button{
+button, .country-card-content{
     cursor: pointer;
 }
 h1,h2,h3,h4,h5{
@@ -81,13 +81,16 @@ button:focus, input:focus{
 
 
 // details page
-#back{
+#back, .borders{
     background-color: $white;
     border: none;
     border-radius: 5px;
-    width: 120px;
     height: 35px;
     color: initial;
     text-decoration: none;
     box-shadow: 0 0 5px $gray;
+}
+#back{
+    width: 120px;
+    
 }

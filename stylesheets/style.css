@@ -18,7 +18,7 @@ body {
   font-weight: 300;
 }
 
-button {
+button, .country-card-content {
   cursor: pointer;
 }
 
@@ -74,15 +74,18 @@ button:focus, input:focus {
   outline: 0;
 }
 
-#back {
+#back, .borders {
   background-color: white;
   border: none;
   border-radius: 5px;
-  width: 120px;
   height: 35px;
   color: initial;
   text-decoration: none;
   box-shadow: 0 0 5px #858585;
+}
+
+#back {
+  width: 120px;
 }
 
 /*# sourceMappingURL=style.css.map */
