@@ -58,7 +58,10 @@ const insert = (data) => {
 
 const home = () => {
     countries.innerHTML = "";
-    insert(data);
+    axios.get( api + 'all' + fields)
+        .then(res => {
+            insert(res.data)
+        })
 }
 
 const region_select = (region) => {
